@@ -7,7 +7,7 @@ function Header() {
     <div className="header">
       <nav className="nav container">
         <a href="/my_portfolio/public/index.html" className="nav_logo">
-          Dikshyant
+          DIKSHYANT
         </a>
         <div className="nav__menu">
           <ul className="nav__list grid">
@@ -42,6 +42,10 @@ function Header() {
               Contact
             </li>
           </ul>
+          <i className="uil uil-times nav__close"></i>
+        </div>
+        <div className="nav__toggle">
+          <i className="uil uil-apps"></i>
         </div>
       </nav>
       {/* <h1>Header component</h1> */}
