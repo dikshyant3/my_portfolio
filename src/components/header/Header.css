@@ -15,9 +15,10 @@ header {
 .dynamic-texts {
   line-height: 3rem;
   height: 3rem;
-  overflow: hidden;
+
+  /* overflow: hidden; */
 }
-.dynamic-texts li {
+.dynamic-texts > li {
   color: #fc6d6d;
   font-size: 2rem;
   font-weight: 600;
@@ -30,10 +31,10 @@ header {
     top: -100px;
   }
 }
-/* .dynamic-texts li span {
+.dynamic-texts li span {
   position: relative;
-} */
-/* .dynamic-texts li span::after {
+}
+.dynamic-texts li span::after {
   content: "";
   position: absolute;
   left: 0;
@@ -48,7 +49,7 @@ header {
     left: 100%;
     margin: 0 -35px 0 35px;
   }
-} */
+}
 /*===CTA===*/
 .cta {
   margin-top: 3.5rem;
@@ -94,6 +95,13 @@ header {
   transform: rotate(90deg);
   font-weight: 300;
   font-size: 0.9rem;
+  animation: slide 1.5s infinite;
+}
+
+@keyframes slide {
+  100% {
+    bottom: 1rem;
+  }
 }
 
 /*=====Media Queries(Medium Devices)=====*/

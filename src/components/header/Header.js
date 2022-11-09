@@ -4,6 +4,7 @@ import CTA from "./CTA";
 import profile from "../../images/profile.png";
 import HeaderSocials from "./HeaderSocials";
 
+// Note animation chalexaina hai aaile
 const Header = () => {
   return (
     <header>
@@ -28,7 +29,7 @@ const Header = () => {
           <img src={profile} alt="profile" />
         </div>
         <a href="#contact" className="scroll__down">
-          Scroll Down
+          Scroll Down &#8594;
         </a>
       </div>
     </header>
