@@ -83,6 +83,9 @@ header {
   height: 360px;
   position: absolute;
   left: calc(50% - 10rem);
+  /* right: 10rem; */
+  /* top: 50%; */
+  /* transform: translateY(-50%); */
   margin-top: 2.75rem;
   border-radius: 12rem 12rem 0 0;
   overflow: hidden;
