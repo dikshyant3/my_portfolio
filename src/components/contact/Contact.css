@@ -52,13 +52,21 @@ textarea {
 
 /*====Media Queries(MEDIUM DEVICES) ====*/
 @media screen and (max-width: 1024px) {
+  #contact {
+    margin-top: 0;
+  }
   .container.contact__container {
     grid-template-columns: 1fr;
+    gap: 2rem;
   }
 }
 /*====Media Queries(SMALL DEVICES) ====*/
 @media screen and (max-width: 600px) {
+  #contact {
+    margin: 2rem;
+  }
   .container.contact__container {
     width: var(--container-width-sm);
+    /* width: 80%; */
   }
 }
