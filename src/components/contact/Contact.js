@@ -47,19 +47,19 @@ const Contact = () => {
               Let's Build a community
             </a>
           </article>
-          <form action="">
-            <input type="text" name="name" placeholder="Full Name" />
-            <input type="email" name="Email" placeholder="Email" />
-            <textarea
-              name="message"
-              placeholder="Your Message"
-              rows="7"
-            ></textarea>
-            <button type="submit" className="btn btn-primary">
-              Send a message
-            </button>
-          </form>
         </div>
+        <form action="">
+          <input type="text" name="name" placeholder="Full Name" />
+          <input type="email" name="Email" placeholder="Email" />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            rows="7"
+          ></textarea>
+          <button type="submit" className="btn btn-primary">
+            Send a message
+          </button>
+        </form>
       </div>
     </section>
   );
