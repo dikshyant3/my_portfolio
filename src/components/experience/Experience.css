@@ -1,4 +1,8 @@
-h5 {
+#experience {
+  margin-top: 5rem;
+}
+
+#experience > h5 {
   text-align: center;
 }
 .experience__container {
@@ -112,3 +116,5 @@ h5 {
     width: 60%;
   }
 }
+/* small devices ko lai responsive banaune ra margin-top:14rem jati halne hai
+ */
