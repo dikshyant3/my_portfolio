@@ -12,7 +12,7 @@ const Contact = () => {
       <div className="container contact__container">
         <div className="contact__options">
           <article className="contact__option">
-            <MdOutlineEmail />
+            <MdOutlineEmail className="contact__option-icon" />
             <h4>Email</h4>
             <h5>dikshyantdhungana@gmail.com</h5>
             <a
@@ -24,7 +24,7 @@ const Contact = () => {
             </a>
           </article>
           <article className="contact__option">
-            <BsLinkedin />
+            <BsLinkedin className="contact__option-icon" />
             <h4>Linkedin</h4>
             <h5>Dikshyant Dhungana</h5>
             <a
@@ -36,7 +36,7 @@ const Contact = () => {
             </a>
           </article>
           <article className="contact__option">
-            <BsTwitter />
+            <BsTwitter className="contact__option-icon" />
             <h4>Twitter</h4>
             <h5>Dikshyant Dhungana</h5>
             <a
