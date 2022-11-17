@@ -3,6 +3,7 @@ import "./Header.css";
 import CTA from "./CTA";
 import profile from "../../images/profile.png";
 import HeaderSocials from "./HeaderSocials";
+import TypeWriterEffect from "react-typewriter-effect";
 
 // Note animation chalexaina hai aaile
 const Header = () => {
@@ -14,14 +15,21 @@ const Header = () => {
           <br />
           Dikshyant Dhungana
         </h3>
-        <ul className="dynamic-texts">
-          <li>
-            <span>a Designer</span>
-          </li>
-          <li>
-            <span>a Web Developer</span>
-          </li>
-        </ul>
+        <TypeWriterEffect
+          textStyle={{
+            fontFamily: ["Poppins", "sans-serif"],
+            color: "#fc6d6d",
+            fontWeight: 600,
+            fontSize: "2rem",
+            textAlign: "center",
+          }}
+          startDelay={2000}
+          cursorColor="#fc6d6d"
+          multiText={["a Designer", "a Web Developer"]}
+          multiTextDelay={1000}
+          typeSpeed={50}
+          multiTextLoop
+        />
         <CTA />
         <HeaderSocials />
 

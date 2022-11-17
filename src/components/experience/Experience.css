@@ -107,7 +107,7 @@
 }
 .skill-bar .bar .react {
   width: 60%;
-  animation: react 3s;
+  animation: react 3s 3;
 }
 @keyframes react {
   0% {
