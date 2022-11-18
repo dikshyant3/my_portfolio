@@ -1,7 +1,8 @@
-header {
+#header {
   height: 100vh;
   padding: 7rem;
   overflow: hidden;
+  margin-top: 0;
 }
 .header__container {
   text-align: center;
@@ -9,10 +10,64 @@ header {
   position: relative;
 }
 .header__container h3 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 600;
 }
+.typewriter {
+  display: flex;
+  flex-direction: column;
+  color: #fc6d6d;
+  font-size: 1.5rem;
+}
+.first {
+  overflow: hidden;
+  color: #fc6d6d;
+  border-right: 0.1rem solid #fc6d6d;
+  white-space: nowrap;
+  margin: 0.25rem auto;
+  letter-spacing: 0.15em;
+  animation: slide 3s steps(2) infinite, typing 3.5s steps(10) infinite,
+    blink-caret 0.75s infinite;
+}
+.second {
+  overflow: hidden;
+  color: #fc6d6d;
+  border-right: 0.1rem solid #fc6d6d;
+  white-space: nowrap;
+  margin: 0 auto;
+  position: relative;
+  top: 0;
+  letter-spacing: 0.15em;
+  animation: slide 3s steps(2) infinite, typing 3.5s steps(15),
+    blink-caret 0.75s infinite;
+}
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 30%;
+  }
+}
 
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  30% {
+    border-color: #fc6d6d;
+  }
+}
+
+/* sliding effect */
+@keyframes slide {
+  to {
+    top: -100px;
+  }
+}
 /* .dynamic-texts li span::after {
   content: "";
   position: absolute;
@@ -120,8 +175,7 @@ header {
     font-size: 1.2rem;
     font-weight: 600;
   }
-  .dynamic-texts li {
+  .header__container TypeWriterEffect {
     font-size: 0.9rem;
-    font-weight: 600;
   }
 }

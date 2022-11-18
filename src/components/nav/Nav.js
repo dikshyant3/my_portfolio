@@ -4,6 +4,7 @@ import { AiOutlineHome } from "react-icons/ai";
 import { AiOutlineUser } from "react-icons/ai";
 import { BiBook } from "react-icons/bi";
 import { BiMessageSquareDetail } from "react-icons/bi";
+// import { Link } from "react-scroll";
 
 const Nav = () => {
   const [activeNav, setActiveNav] = useState("#");
@@ -15,6 +16,7 @@ const Nav = () => {
           onClick={() => setActiveNav("#")}
           className={activeNav === "#" ? "active" : ""}
         >
+          {/* <Link activeClass="active" smooth spy to="header"> */}
           <AiOutlineHome />
         </a>
         <a
@@ -22,6 +24,7 @@ const Nav = () => {
           onClick={() => setActiveNav("#about")}
           className={activeNav === "#about" ? "active" : ""}
         >
+          {/* <Link activeClass="active" smooth spy to="about"> */}
           <AiOutlineUser />
         </a>
         <a
@@ -29,6 +32,7 @@ const Nav = () => {
           onClick={() => setActiveNav("#experience")}
           className={activeNav === "#experience" ? "active" : ""}
         >
+          {/* <Link activeClass="active" smooth spy to="experience"> */}
           <BiBook />
         </a>
 
@@ -37,6 +41,7 @@ const Nav = () => {
           onClick={() => setActiveNav("#contact")}
           className={activeNav === "#contact" ? "active" : ""}
         >
+          {/* <Link activeClass="active" smooth spy to="contact"> */}
           <BiMessageSquareDetail />
         </a>
       </nav>
